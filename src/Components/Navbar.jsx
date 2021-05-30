@@ -7,13 +7,13 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-light " style={{backgroundColor:"#2a4c6b"}}>
                 <div className="container">
                     <NavLink className="navbar-brand title" style={{padding:'16px'}} to="/">Nayan's PortFolio</NavLink>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler" id="button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                             <li className="nav-item active">
-                                <NavLink className="nav-link hov" aria-current="page" to="/">Home</NavLink>
+                                <NavLink className="nav-link hov" data-bs-toggle="collapse" data-bs-target=".button" aria-current="page" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link hov" to="/Education">Education</NavLink>
