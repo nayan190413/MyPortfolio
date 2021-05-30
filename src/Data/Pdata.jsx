@@ -34,7 +34,7 @@ const Pdata=[
             title:`React Portfolio`,
             text1:"use tools as ReactHooks,React-router,bootstrap,react-bootstrap,react-particles,react-responsive-carousel",
             text2:"it is a resposive application",
-            link:"https://github.com/nayan190413/WebsiteImage"
+            link:"https://nayan190413.github.io/MyPortfolioWeb/"
         },
 ]
 export default Pdata;
