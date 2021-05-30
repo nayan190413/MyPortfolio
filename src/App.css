@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&display=swap');
+*{
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+--primary-white:#ffff;
+--primary_orange:#f9ab00;
+--primary-dark:#0000;
+--primary-blackred:#3b3636;
+--primary-hover-red:#f33501;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav{
+    z-index: 2;
 }
-
-.App-link {
-  color: #61dafb;
+nav ul li{
+    padding: 0 0.2rem 0 0.2rem;
+    text-transform: capitalize;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hov:active,.hov:focus,.hov:hover{
+    border-top: 3px solid var(--primary_orange);
+}
+.hov:hover{
+    border-top: 3px solid var(--primary_orange);
+    transition: 5;
+}
+.hov{
+    color:var(--primary-white) !important ;
+    padding-top: 1.125rem;
+    margin-right: 0.75rem;
+    cursor: pointer;
+    letter-spacing: 00.0375rem;
+}
+.title{
+    color:var(--primary-white) !important ;
+}
+.navbar-brand{
+    max-width: 17.25rem;
+    height:4rem;
+    
+}
+.header-wrap{
+position: relative;
+background:url(./Images/bg1.jpeg) no-repeat;
+background-size: cover;
+background-position: center;
+height: 90vh;
+}
+.main-info{
+/* display: flex; */
+/* position: absolute; */
+/* top:0;
+right: 0;
+left: 0;
+bottom: 0; */
+/* flex-direction: column; */
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.main-info h1{
+    color: var(--primary_orange);
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+}
+.type-string{
+    font-size: 2rem;
+    color: var(--primary-white);
+    font-family: 'Karla', sans-serif;
+}
+.tsparticles-canvas-el{
+    position: absolute;
+    height: 200vh;
+    width: 100vw;
+    z-index: 1;
+}
+.back{
+    position: relative;
+    background:url(./Images/bg1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+}
+.projtitle{
+    color:var(--primary-white);
+}
+.card{
+    z-index: 2;
+}
+.cardcol{
+    background-color: skyblue !important;
+}
+.cardbut{
+    background-color: white;
+}
+.pb{
+    border: 1px solid white;
+}
+.ph{
+    border: 1px solid whitesmoke;
+}
+.my-info{
+    margin:50px 350px;
+    margin-top: 40px;
+}
+.img-pp{
+    margin-top: 50px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 3;
+}
+@media screen and (max-width:880px) {
+    .mediacoro{
+        height: 100vh;
+    }
+    .carousel{
+        height: 100vh;
+    }
+    .my-info{
+        margin: 30px 0px;
+    }
+    .img-pp{
+        width: 150px;
+        height: 150px;
+    }
 }
